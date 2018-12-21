@@ -12,3 +12,7 @@ Le but de ce projet est de classifier des documents issus du procès des groupes
 * Report
 * Resume
 * Scientific
+
+Les classes du dataset sont réparties comme suit: 
+
+![Répartition des classes](classes.png)
