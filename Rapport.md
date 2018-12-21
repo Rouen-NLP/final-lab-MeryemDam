@@ -64,7 +64,7 @@ MLP, CharLevel Vectors:  0.81
 ## Synthèse
 
 On obtient au total les résultats suivants : 
-![Répartition des classes](final_result.png)
+![Final Result](final_result.png)
 
 où {0,1,2,3} sont respectivement Count Vectors, Word Level TF-IDF, N-gram Vector et Character Level Vector.
 
