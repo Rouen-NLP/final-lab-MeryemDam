@@ -21,14 +21,14 @@ from sklearn import metrics
 #%%
 
 data= pd.read_csv('tobacco-lab/data/Tobacco3482.csv')
-print(data.head())  #to see and example of the data we are working with
+#print(data.head())  #to see and example of the data we are working with
 sns.countplot(data=data, y='label')   #to visualize the frequency of each type of data we have
 
 #%% 
 path = 'tobacco-lab/data/Tobacco3482-OCR'
 dirs_classes = os.listdir( path )
-for file in dirs_classes:
-   print (file)
+#for file in dirs_classes:
+#   print (file)
 read=[]
 dirs_contenus=[]
 l=[]
@@ -285,11 +285,39 @@ print ("LR, N-Gram Vectors: ", accuracy)
 accuracy = train_model(linear_model.LogisticRegression(), xtrain_tfidf_ngram_chars, y_train, xval_tfidf_ngram_chars)
 print ("LR, CharLevel Vectors: ", accuracy)
 
+#%%
+from keras.layers import Dense, Input, LSTM, GRU
+from keras.optimizers import RMSprop
+from keras.engine import Model
+
+import numpy as np
 
 
 
 
+*#%%
+
+T,D = xtrain_count.shape[0], xtrain_count.shape[1]
+nb_classes = len(np.unique(y_test))
+y_train_rnn = to_categorical(y_train, nb_classes)
+y_test_rnn = to_categorical(y_test, nb_classes)
+
+d-+ef rnn_classif_network(T, D):
+
+    inputs = Input(name='input', shape=[T, D])
+    layer = LSTM(50, return_sequences=True)(inputs)
+    layer = LSTM(50, return_sequences=False)(layer)
+    predictions = Dense(nb_classes, activation='softmax')(layer)
+
+    network = Model(inputs=inputs, outputs=predictions)
+    network.compile(optimizer='rmsprop',
+                    loss='categorical_crossentropy',
+                    metrics=['accuracy'])
+
+    return network
+
+
+network = rnn_classif_network(T,D)
         
 
         
->>>>>>> 7bc93cbd8259240686ec91b9b94111cae3b8ce9d
