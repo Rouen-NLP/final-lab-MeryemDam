@@ -1,4 +1,4 @@
-# final-lab-MeryemDam
+# final-lab- Meryem Dammou
 
 
 Le but de ce projet est de classifier des documents issus des procès de groupes américains de tabac
