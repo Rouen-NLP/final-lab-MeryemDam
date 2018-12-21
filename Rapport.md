@@ -55,6 +55,7 @@ Pour ce modèle, la précision est maximale pour la représentation en n-gram *0
 
 ## MLP Classifier
 
+MLP, Count Vectors:  0.8
 
 
 
