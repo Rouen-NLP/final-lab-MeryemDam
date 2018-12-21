@@ -54,8 +54,22 @@ Pour ce modèle, la précision est maximale pour la représentation en n-gram *0
 * NB, CharLevel Vectors:  0.57
 
 ## MLP Classifier
+Pour ce modèle, on obtient une précision maximale en character level qui est de *0.81*
 
-MLP, Count Vectors:  0.8
+MLP, Count Vectors:  0.79
+MLP, WordLevel TF-IDF:  0.78
+MLP, N-Gram Vectors:  0.74
+MLP, CharLevel Vectors:  0.81
+
+## Synthèse
+
+On obtient au total les résultats suivants : 
+![Répartition des classes](final_result.png)
+
+où {0,1,2,3} sont respectivement Count Vectors, Word Level TF-IDF, N-gram Vector et Character Level Vector.
+
+On remarque qu'on obtient la meilleure précision pour MLP pour une représentation en charactères
+
 
 
 
