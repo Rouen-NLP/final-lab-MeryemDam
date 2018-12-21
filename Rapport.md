@@ -40,7 +40,24 @@ Le but étant de comparer les résultats de la classification de chacune de ces 
 
 Pour ce modèle, on obtient une précision maximale pour la représentation en Count Vectorizer de *0.79*
 
+LR, Count Vectors:  0.7935368043087971
+LR, WordLevel TF-IDF:  0.770197486535009
+LR, N-Gram Vectors:  0.7289048473967684
+LR, CharLevel Vectors:  0.7827648114901257
+
 ## Naive Bayes
+Pour ce modèle, la précision est maximale pour la représentation en n-gram *0.71*
+
+NB, Count Vectors:  0.6624775583482945
+NB, WordLevel TF-IDF:  0.6588868940754039
+NB, N-Gram Vectors:  0.7109515260323159
+NB, CharLevel Vectors:  0.5727109515260324
+
+## MLP Classifier
+
+
+
+
 
 
 
